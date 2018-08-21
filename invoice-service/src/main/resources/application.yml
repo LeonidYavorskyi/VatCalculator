@@ -1,0 +1,15 @@
+server:
+  servlet:
+    context-path: /vat
+  port: 3000
+
+spring:
+  application:
+    name: invoice-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
