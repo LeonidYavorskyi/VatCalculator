@@ -56,7 +56,7 @@ java -jar invoice-service/target/invoice-service-0.0.1-SNAPSHOT.jar &
 #### Functionality
 To create a new invoice, send the following request:
 ```yml
-    PUT http://127.0.0.1:3000/vat/invoices
+    PUT http://127.0.0.1:4000/vat/invoices
 ```
 with request body:
 ```json
@@ -82,7 +82,7 @@ All created invoices are stored in MySQL db (test_db) that will be automatically
 
 To calculate total customer balance, send following request:
 ```yml
-    GET http://127.0.0.1:5000/vat/invoices/customers/1234/balance
+    GET http://127.0.0.1:4000/vat/invoices/customers/1234/balance
 ```
 Response should be like this:
 ```json
